@@ -1,5 +1,13 @@
 'use strict';
 
 module.exports = {
-  name: require('./package').name
+  name: 'source-code-editor',
+
+  lazyLoading: {
+    enabled: true
+  },
+
+  isDevelopingAddon() {
+    return true;
+  }
 };
